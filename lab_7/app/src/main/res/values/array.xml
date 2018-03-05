@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="theme_labels" >
+        <item>Image_display</item>
+        <item>Content_display</item>
+    </array>
+    <array name="theme_values">
+        <item>image</item>
+        <item>content</item>
+    </array>
+
+</resources>
