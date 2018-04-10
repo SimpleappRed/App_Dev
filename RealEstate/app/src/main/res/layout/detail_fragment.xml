@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp" >
+
+        <ImageView
+            android:id="@+id/imgCover"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/coveragent320x190" />
+
+        <RelativeLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/margin_35dp" >
+
+            <ImageView
+                android:id="@+id/imgHeaderList"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ribbondetails" />
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="25dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvPrice"
+                    style="@style/DetailRibbonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:text="$500"
+                    android:textSize="@dimen/text_size_12sp" />
+
+                <TextView
+                    android:id="@+id/textView1"
+                    style="@style/DetailRibbonStyle"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:includeFontPadding="false"
+                    android:lineSpacingMultiplier="1"
+                    android:text="/month"
+                    android:textSize="@dimen/text_size_12sp" />
+
+            </LinearLayout>
+
+        </RelativeLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|left"
+            android:layout_margin="@dimen/margin_10dp"
+            android:orientation="vertical" >
+
+            <TextView
+                android:id="@+id/tvTitle"
+                style="@style/DetailYellowStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="@dimen/list_text_size_16sp" />
+
+            <TextView
+                android:id="@+id/tvAddress"
+                style="@style/DetailWhiteStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="TextView"
+                android:textSize="@dimen/text_size_14sp" />
+
+        </LinearLayout>
+
+    </FrameLayout>
+    <TabHeader
+        android:id="@+id/tabHeader" 
+        android:layout_width="match_parent"
+    	android:layout_height="wrap_content" />
+
+    <FrameLayout
+        android:id="@+id/detailContainer"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+</LinearLayout>

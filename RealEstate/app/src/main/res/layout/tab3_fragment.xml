@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp"
+        android:visibility="gone">
+        
+        <com.example.nidheesha.realestate.components.slider.SliderV2
+	        android:id="@+id/sliderV2"
+	        android:layout_width="match_parent"
+	        android:layout_height="wrap_content" />
+        
+    </FrameLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent" >
+
+        <com.example.nidheesha.realestate.components.listview.CustomListView
+            android:id="@+id/listView"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="@dimen/margin_33dp"
+            android:scrollingCache="true"
+            android:smoothScrollbar="true" />
+
+        <com.example.nidheesha.realestate.components.tabheader.TabHeader
+            android:id="@+id/tabHeader"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+        
+        <TextView
+            android:id="@+id/tvEmpty"
+            style="@style/DetailYellowStyle"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:text="@string/str_empty_results"
+            android:textSize="@dimen/text_size_17sp" />
+        
+    </FrameLayout>
+
+</LinearLayout>

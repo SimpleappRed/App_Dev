@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Realworld estate</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="string_featured">Featured</string>
+    <string name="string_mycity">My City</string>
+    <string name="string_home">Home</string>
+    <string name="string_maps">Maps</string>
+    <string name="string_profile">Profile</string>
+    <string name="text_slash_month">/month</string>
+    <string name="str_keyword">Keywords:</string>
+    <string name="str_price">Price ($):</string>
+    <string name="str_zipcode">Zip Code:</string>
+    <string name="str_no_of_bathrooms">No of Bathrooms:</string>
+    <string name="str_no_of_bedrooms">No of Bedrooms</string>
+    <string name="str_city">City:</string>
+    <string name="str_apartment_type">Apartment Type:</string>
+
+    <string name="promptMin">Minimum Price</string>
+    <string name="promptMax">Maximum Price</string>
+
+    <string-array name="price">
+        <item>1</item>
+        <item>5</item>
+        <item>10</item>
+        <item>50</item>
+        <item>100</item>
+        <item>500</item>
+        <item>1000</item>
+        <item>5000</item>
+        <item>10000</item>
+        <item>50000</item>
+        <item>100000</item>
+    </string-array>
+
+    <string name="promptNoOfBathrooms">No of Bathrooms</string>
+
+    <string-array name="bathrooms">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="promptBedrooms">No of Bedrooms</string>
+
+    <string-array name="bedrooms">
+        <item>1</item>
+        <item>2</item>
+        <item>3</item>
+        <item>4</item>
+        <item>5</item>
+        <item>6</item>
+        <item>7</item>
+        <item>8</item>
+        <item>9</item>
+        <item>10</item>
+    </string-array>
+
+    <string name="promptCity">Select City</string>
+    <string name="promptApartmentType">Apartment Type</string>
+    <string name="str_opening_text">Find any apartment for rent or any land to buy. Realworld estate gives you the local scoop about apartments for rent or lands for sale, neighborhood insights and market trends and much more</string>
+    <string name="str_empty_results">Empty Results.</string>
+    <string name="min_price">Min Price ($):</string>
+    <string name="max_price">Max Price ($):</string>
+    <string name="title_activity_maps">Map</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

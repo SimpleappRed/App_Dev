@@ -1,0 +1,319 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <ScrollView
+        android:id="@+id/scrollView1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        tools:ignore="UselessParent" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            tools:ignore="ScrollViewSize" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_margin="@dimen/margin_10dp"
+                android:orientation="vertical" >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/imgLocation"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icondetailskeyword"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tvLabel1"
+                        style="@style/DetailYellowStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:minWidth="@dimen/width_130dp"
+                        android:text="@string/str_keyword" />
+
+                    <EditText
+                        android:id="@+id/txtKeywords"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:ignore="TextFields,InefficientWeight" >
+
+                    </EditText>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView07"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icondetailsprice"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tvLabel8"
+                        style="@style/DetailYellowStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:minWidth="@dimen/width_130dp"
+                        android:text="@string/min_price" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Spinner
+                            android:id="@+id/spinnerPriceMin"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:prompt="@string/promptMin" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView01"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icondetailsprice"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tvLabel2"
+                        style="@style/DetailYellowStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:minWidth="@dimen/width_130dp"
+                        android:text="@string/max_price" />
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent" >
+
+                        <Spinner
+                            android:id="@+id/spinnerPriceMax"
+                            android:layout_width="0dp"
+                            android:layout_height="match_parent"
+                            android:layout_weight="1"
+                            android:entries="@array/price"
+                            android:prompt="@string/promptMax" />
+                    </LinearLayout>
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content" >
+
+                    <ImageView
+                        android:id="@+id/ImageView02"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icondetailszipcode"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tvLabel3"
+                        style="@style/DetailYellowStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:minWidth="@dimen/width_130dp"
+                        android:text="@string/str_zipcode" />
+
+                    <EditText
+                        android:id="@+id/txtZipCode"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        tools:ignore="TextFields,InefficientWeight" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView03"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icondetailsbathroom"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tvLabel4"
+                        style="@style/DetailYellowStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:minWidth="@dimen/width_130dp"
+                        android:text="@string/str_no_of_bathrooms" />
+
+                    <Spinner
+                        android:id="@+id/spinnerBathrooms"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:prompt="@string/promptNoOfBathrooms"
+                        tools:ignore="InefficientWeight" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView04"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icondetailsbedroom"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tvLabel5"
+                        style="@style/DetailYellowStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:minWidth="@dimen/width_130dp"
+                        android:text="@string/str_no_of_bedrooms" />
+
+                    <Spinner
+                        android:id="@+id/spinnerBedrooms"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:prompt="@string/promptNoOfBathrooms"
+                        tools:ignore="InefficientWeight" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView05"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icondetailscity"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tvLabel6"
+                        style="@style/DetailYellowStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:minWidth="@dimen/width_130dp"
+                        android:text="@string/str_city" />
+
+                    <Spinner
+                        android:id="@+id/spinnerCity1"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:prompt="@string/promptCity"
+                        tools:ignore="InefficientWeight" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="45dp" >
+
+                    <ImageView
+                        android:id="@+id/ImageView06"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:src="@drawable/icondetailsapartmenttype"
+                        tools:ignore="ContentDescription" />
+
+                    <TextView
+                        android:id="@+id/tvLabel7"
+                        style="@style/DetailYellowStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginLeft="@dimen/margin_5dp"
+                        android:minWidth="@dimen/width_130dp"
+                        android:text="@string/str_apartment_type" />
+
+                    <Spinner
+                        android:id="@+id/spinnerApartmentType"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_weight="1"
+                        android:prompt="@string/promptApartmentType"
+                        tools:ignore="InefficientWeight" />
+
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/margin_10dp"
+                    android:orientation="vertical" >
+
+                    <Button
+                        android:id="@+id/btnSearch"
+                        style="@style/DetailYellowStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:background="@drawable/button_large"
+                        android:text="Search"
+                        android:textSize="@dimen/list_text_size_18sp"
+                        tools:ignore="HardcodedText" />
+
+                    <Button
+                        android:id="@+id/btnClear"
+                        style="@style/DetailYellowStyle"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_gravity="center"
+                        android:layout_marginTop="@dimen/margin_10dp"
+                        android:background="@drawable/button_large"
+                        android:text="Clear"
+                        android:textSize="@dimen/list_text_size_18sp"
+                        tools:ignore="HardcodedText" />
+
+                </LinearLayout>
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+
+</LinearLayout>

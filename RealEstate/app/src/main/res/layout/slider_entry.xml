@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="190dp">
+
+        <ImageView
+            android:id="@+id/imgViewSlider"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:src="@drawable/coveragent320x190" />
+
+        <FrameLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/margin_25dp" >
+
+            <ImageView
+                android:id="@+id/imgViewer"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ribbonopening" />
+
+            <TextView
+                android:id="@+id/tvPrice"
+                style="@style/DetailRibbonStyle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="left"
+                android:layout_marginLeft="@dimen/margin_20dp"
+                android:layout_marginTop="@dimen/margin_5dp"
+                android:text="TextView" />
+
+        </FrameLayout>
+
+        <TextView
+            android:id="@+id/tvAddress"
+            style="@style/DetailRibbonStyle"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="bottom|right"
+            android:layout_marginBottom="@dimen/margin_5dp"
+            android:layout_marginRight="@dimen/margin_5dp"
+            android:gravity="right"
+            android:text="TextView" />
+
+    </FrameLayout>
+
+</LinearLayout>

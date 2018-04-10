@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <integer name="max_lines_1">1</integer>
+    <integer name="max_lines_2">2</integer>
+    <integer name="max_Lines_4">4</integer>
+    <integer name="length_20">20</integer>
+    <integer name="length_166">166</integer>
+    <integer name="max_lines_3">3</integer>
+    <integer name="length_25">25</integer>
+    <integer name="length_35">35</integer>
+</resources>

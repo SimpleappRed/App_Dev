@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <array name="lables">
+        <item>Show Image</item>
+        <item>Vanish image</item>
+    </array>
+    <array name="values">
+        <item>image_show</item>
+        <item>image_invisible</item>
+    </array>
+
+</resources>

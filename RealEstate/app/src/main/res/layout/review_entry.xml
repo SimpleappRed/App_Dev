@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="130dp"
+        android:orientation="vertical" >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:padding="@dimen/margin_10dp" >
+
+            <ImageView
+                android:id="@+id/imgThumb1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/list_thumb50x50_001" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_marginLeft="@dimen/margin_10dp"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/tvName"
+                    style="@style/DetailYellowStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/tvDate"
+                    style="@style/DetailWhiteStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="TextView" />
+
+                <TextView
+                    android:id="@+id/tvComment"
+                    style="@style/DetailGrayStyle"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:lines="@integer/max_Lines_4"
+                    android:maxLength="@integer/length_166"
+                    android:maxLines="@integer/max_Lines_4"
+                    android:minLines="@integer/max_Lines_4"
+                    android:text="Lorem ipsum dolor sit amet consectitur id el amet ipsum dolor lorem Lorem ipsum dolor sit amet consectitur id el amet ipsum dolor lorem Lorem ipsum dolor sit amet consectitur id el amet ipsum dolor lorem" />
+
+            </LinearLayout>
+        </LinearLayout>
+
+        <ImageView
+            android:id="@+id/imgHeaderList"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:src="@drawable/thumblistreviewbreaker" />
+    </LinearLayout>
+
+</LinearLayout>

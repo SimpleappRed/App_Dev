@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="shadow_color">#564a56</color>
+    <color name="text_color">#fbc604</color>
+    <color name="text_unselected_color">#ffffff</color>
+    <color name="color_switcher_yellow">#ffcc00</color>
+    <color name="color_switcher_pink">#fdd4f2</color>
+    <color name="color_switcher_red">#ef6b6b</color>
+    <color name="color_switcher_green">#9bec9b</color>
+    <color name="color_switcher_blue">#63a3ec</color>
+    <color name="color_switcher_default">#c6c6c6</color>
+    <color name="color_switcher_my_custom_color">#b794ec</color>
+</resources>

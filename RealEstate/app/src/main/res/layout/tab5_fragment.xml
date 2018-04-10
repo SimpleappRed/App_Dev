@@ -1,0 +1,127 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" 
+    android:id="@+id/linearlayout">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical" >
+
+        <FrameLayout
+            android:id="@+id/container1123"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent" >
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:orientation="vertical" >
+
+                <FrameLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="190dp" >
+
+                    <ImageView
+                        android:id="@+id/imgCover"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:layout_gravity="center"
+                        android:scaleType="centerCrop"
+                        android:src="@drawable/coverapartmentdetails320x190" />
+
+                </FrameLayout>
+
+                <ScrollView
+                    android:id="@+id/scrollView1"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:layout_weight="1"
+                    android:fillViewport="true" >
+
+                    <LinearLayout
+                        android:id="@+id/container11"
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+                        android:orientation="vertical" >
+
+                        <LinearLayout
+                            android:layout_width="match_parent"
+                            android:layout_height="match_parent"
+                            android:layout_margin="@dimen/margin_30dp"
+                            android:orientation="vertical" >
+
+                            <TextView
+                                android:id="@+id/tvTitle"
+                                style="@style/DetailYellowStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_40dp"
+                                android:textSize="@dimen/list_text_size_18sp" />
+
+                            <TextView
+                                android:id="@+id/tvAddress"
+                                style="@style/DetailWhiteStyle"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_10dp"
+                                android:text="TextView"
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <TextView
+                                android:id="@+id/tvLabel7"
+                                style="@style/DetailWhiteStyle"
+                                android:layout_width="match_parent"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_10dp"
+                                android:gravity="center"
+                                android:lines="@integer/max_lines_3"
+                                android:text="Are you looking for a great place to stay? Contact our hotline and we&apos;ll connect you with any of our friendly real estate agent."
+                                android:textSize="@dimen/text_size_14sp" />
+
+                            <Button
+                                android:id="@+id/btnEmail"
+                                style="@color/text_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_10dp"
+                                android:background="@drawable/buttonlarge"
+                                android:text="Button"
+                                android:textColor="@color/text_color"
+                                android:textStyle="bold" />
+
+                            <Button
+                                android:id="@+id/btnCall"
+                                style="@color/text_color"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_gravity="center"
+                                android:layout_marginTop="@dimen/margin_10dp"
+                                android:background="@drawable/buttonlarge"
+                                android:text="Button"
+                                android:textColor="@color/text_color"
+                                android:textStyle="bold" />
+
+                        </LinearLayout>
+                    </LinearLayout>
+                </ScrollView>
+            </LinearLayout>
+
+            <ImageView
+                android:id="@+id/imgThumb"
+                android:layout_width="100dp"
+                android:layout_height="100dp"
+                android:layout_gravity="top|center"
+                android:layout_marginTop="@dimen/margin_140dp"
+                android:src="@drawable/agentthumb100x100" />
+        </FrameLayout>
+
+    </LinearLayout>
+
+</LinearLayout>

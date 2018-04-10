@@ -1,0 +1,147 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".main.MainActivity" >
+    
+    <FrameLayout
+        android:id="@+id/fragmentMainContainerWrapper"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:ignore="UselessParent" >
+
+	    <ImageView
+	        android:id="@+id/imgThumb1"
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:adjustViewBounds="true"
+	        android:scaleType="center"
+	        android:src="@drawable/background"
+	        tools:ignore="ContentDescription" />
+	    
+	    <LinearLayout
+	    android:layout_width="match_parent"
+	    android:layout_height="match_parent"
+	    android:orientation="vertical"  >
+	
+	        <LinearLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="wrap_content"
+	            android:orientation="vertical" >
+	
+	            <FrameLayout
+	                android:layout_width="match_parent"
+	                android:layout_height="wrap_content" >
+	
+	                <ImageView
+	                    android:id="@+id/header"
+	                    android:layout_width="fill_parent"
+	                    android:layout_height="wrap_content"
+	                    android:src="@drawable/headerbackground"
+	                    tools:ignore="ContentDescription" />
+	
+	                <FrameLayout
+	                    android:id="@+id/frameList"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="left|center"
+	                    android:layout_marginLeft="@dimen/margin_5dp"
+	                    android:background="@drawable/header_buton_left" >
+	
+	                    <ImageView
+	                        android:id="@+id/imgHeaderList"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center"
+	                        android:src="@drawable/headericonlist"
+	                        tools:ignore="ContentDescription" />
+
+	                </FrameLayout>
+	
+	                <FrameLayout
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="top|center"
+	                    android:layout_margin="10dp" >
+	
+	                    <!--<ImageView-->
+	                        <!--android:id="@+id/imgLogo"-->
+	                        <!--android:layout_width="wrap_content"-->
+	                        <!--android:layout_height="wrap_content"-->
+	                        <!--android:layout_gravity="center"-->
+	                        <!--android:src="@drawable/headerlogo"-->
+	                        <!--tools:ignore="ContentDescription" />-->
+						<TextView
+							android:layout_width="wrap_content"
+							android:layout_height="wrap_content"
+							android:text="@string/app_name"
+							android:textColor="#ffffff"
+							android:textSize="20sp"
+							/>
+
+	                </FrameLayout>
+	
+	                <FrameLayout
+	                    android:id="@+id/frameSearch"
+	                    android:layout_width="wrap_content"
+	                    android:layout_height="wrap_content"
+	                    android:layout_gravity="right|center"
+	                    android:layout_marginRight="@dimen/margin_5dp"
+	                    android:background="@drawable/header_buton_right" >
+	
+	                    <ImageView
+	                        android:id="@+id/imgHeaderSearch"
+	                        android:layout_width="wrap_content"
+	                        android:layout_height="wrap_content"
+	                        android:layout_gravity="center"
+	                        android:src="@drawable/headericonsearch"
+	                        tools:ignore="ContentDescription" />
+
+	                </FrameLayout>
+	            </FrameLayout>
+	
+	        </LinearLayout>
+	
+	    <FrameLayout
+	        android:layout_width="match_parent"
+	        android:layout_height="match_parent"
+	        android:layout_weight="1"
+	        tools:ignore="InefficientWeight" >
+	
+	        <FrameLayout
+	            android:id="@+id/fragmentContainer"
+	            android:layout_width="match_parent"
+	            android:layout_height="match_parent"
+	            android:layout_marginBottom="@dimen/margin_45dp">
+	
+	        </FrameLayout>
+	
+	        
+        
+	        <FrameLayout
+	            android:layout_width="match_parent"
+	            android:layout_height="59dp"
+	            android:layout_gravity="bottom|center" >
+	
+	            <ImageView
+	                android:id="@+id/imageView4"
+	                android:layout_width="wrap_content"
+	                android:layout_height="wrap_content"
+	                android:src="@drawable/footerbackground"
+	                tools:ignore="ContentDescription" />
+	            
+	            <com.example.nidheesha.realestate.components.tabheader.TabHeader
+	                android:id="@+id/tabHeaderMain"
+	                android:layout_width="match_parent"
+	                android:layout_height="match_parent"
+	                android:layout_gravity="bottom|center" />
+	        </FrameLayout>
+	    </FrameLayout>
+	</LinearLayout>
+	</FrameLayout>
+</LinearLayout>    
+
+
+
