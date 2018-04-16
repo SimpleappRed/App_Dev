@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="10dp"
+    tools:context="com.example.nidheesha.connect.MainActivity">
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="enter number"
+        android:id="@+id/number"
+        />
+    <Button
+        android:layout_below="@+id/number"
+        android:layout_width="match_parent"
+        android:text="send sms"
+        android:layout_height="wrap_content"
+        android:id="@+id/send_sms"
+        />
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="call"
+        android:layout_below="@+id/send_sms"
+        android:id="@+id/call"/>
+
+</RelativeLayout>
